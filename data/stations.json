@@ -240,5 +240,26 @@
         "destinations": [
             "Shinagawa Station (Main Attraction: Long corridor)"
         ]
+    },
+    "sta-shibuya": {
+        "name": "Shibuya 渋谷",
+        "images": {
+            "Outside": [
+                "images/sta-shibuya/out1.jpg"
+            ],
+            "Inside": [
+                "images/sta-shibuya/in1.jpg",
+                "images/sta-shibuya/in2.jpeg"
+            ]
+        },
+        "lines": [
+            "JR East: Saikyō 10, Shōnan–Shinjuku 19, Yamanote 20",
+            "Tokyo Metro/Tokyu: Hanzōmon 1/Den-en-toshi 1; Fukutoshin 16/Tōyoko 1; Ginza 1/-",
+            "Keiyo: Inokashira 1"
+            ],
+        "destinations": [
+            "Shibuya Sky",
+            "Shibuya Crossing"
+        ]
     }
 }
