@@ -20,7 +20,8 @@
         "name": "Shinjuku 新宿",
         "images": {
             "Outside": [
-                "images/sta-shinjuku/out1.jpg"
+                "images/sta-shinjuku/out1.jpg",
+                "images/sta-shinjuku/out2.jpg"
             ],
             "Inside": [
                 "images/sta-shinjuku/in1.jpg"

@@ -25,7 +25,7 @@ body {
     top: 0;
     right: 0;
 
-    width: 360px;
+    width: 500px;
     max-width: 90vw;
     height: 100%;
 
@@ -37,6 +37,9 @@ body {
 
     transform: translateX(100%);
     transition: transform 0.25s ease;
+
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 #side-panel.open {
@@ -83,22 +86,35 @@ body {
 }
 
 #carousel {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  position: relative;
+  width: 100%;
   margin-bottom: 20px;
 }
 
 #carousel-image {
   width: 100%;
+  max-width: 100%;
+  display: block;
   border-radius: 12px;
   object-fit: cover;
 }
 
 #carousel-prev,
 #carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
   font-size: 28px;
   border: none;
-  background: none;
+  background: rgba(255, 255, 255, 0.75);
   cursor: pointer;
+}
+
+#carousel-prev {
+  left: 8px;
+}
+
+#carousel-next {
+  right: 8px;
 }
