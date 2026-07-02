@@ -159,3 +159,8 @@ body {
   cursor: pointer;
   touch-action: manipulation;
 }
+
+#map-container,
+#rail-map {
+  touch-action: none;
+}

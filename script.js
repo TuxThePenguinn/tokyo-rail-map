@@ -81,7 +81,14 @@ async function setupMap() {
       center: true,
       minZoom: 0.5,
       maxZoom: 20,
-      mouseWheelZoomEnabled: true
+
+      mouseWheelZoomEnabled: true,
+      dblClickZoomEnabled: false,
+
+      zoomScaleSensitivity: 0.18,
+
+      // important for mobile
+      preventMouseEventsDefault: false
     });
 
     Object.keys(stationData).forEach(stationId => {
