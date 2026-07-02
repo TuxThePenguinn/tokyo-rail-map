@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+}
+
+#app {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#map-container {
+    width: 100%;
+    height: 100%;
+    background: #f5f5f5;
+}
+
+#rail-map {
+    width: 100%;
+    height: 100%;
+}
+
+#side-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 360px;
+    max-width: 90vw;
+    height: 100%;
+
+    padding: 20px;
+    background: white;
+    box-shadow: -4px 0 16px rgba(0,0,0,0.15);
+
+    overflow-y: auto;
+
+    transform: translateX(100%);
+    transition: transform 0.25s ease;
+}
+
+#side-panel.open {
+    transform: translateX(0);
+}
+
+#close-panel {
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#station-image {
+    width: 100%;
+    border-radius: 12px;
+    display: none;
+}
+
+.station {
+    cursor: pointer;
+}
+
+#map-container {
+    touch-action: none;
+}

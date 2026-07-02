@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Tokyo Rail Clickable Map</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main id="app">
+    <section id="map-container">
+      <object
+        id="rail-map"
+        data="map.svg"
+        type="image/svg+xml">
+      </object>
+    </section>
+
+    <aside id="side-panel">
+        <button id="close-panel" aria-label="Close panel">×</button>
+
+        <img id="station-image" src="" alt="" />
+
+        <h1 id="station-name">Select a station</h1>
+
+        <h2>Lines</h2>
+        <ul id="station-lines"></ul>
+    </aside>    
+  </main>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.2/dist/svg-pan-zoom.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
