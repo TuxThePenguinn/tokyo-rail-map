@@ -23,6 +23,22 @@ function openPanel(station) {
   });
 
   document.getElementById("side-panel").classList.add("open");
+
+  const destinationsList = document.getElementById("station-destinations");
+  destinationsList.innerHTML = "";
+
+  if (station.destinations && station.destinations.length > 0) {
+    station.destinations.forEach(destination => {
+      const li = document.createElement("li");
+      li.textContent = destination;
+      destinationsList.appendChild(li);
+    });
+  } else {
+    const li = document.createElement("li");
+    li.textContent = "None listed";
+    destinationsList.appendChild(li);
+  }
+  
 }
 
 async function setupMap() {
@@ -48,10 +64,19 @@ async function setupMap() {
 
       if (!stationElement) return;
 
+      const station = stationData[stationId];
+
+      const hasDestinations =
+        station.destinations &&
+        station.destinations.length > 0;
+
+      stationElement.style.fill = hasDestinations ? "#2ecc71" : "white";
+      stationElement.style.stroke = "#111";
+
       stationElement.classList.add("station");
 
       stationElement.addEventListener("click", () => {
-        openPanel(stationData[stationId]);
+        openPanel(station);
       });
     });
   });

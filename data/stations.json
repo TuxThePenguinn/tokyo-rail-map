@@ -5,6 +5,9 @@
         "lines": [
             "JR East: Yamanote 18, Chūō-Sōbu 11",
             "Toei: Ōedo 26"
+        ],
+        "destinations": [
+            "Placeholder"
         ]
     },
     "sta-shinjuku": {
@@ -16,6 +19,9 @@
             "Keiō: Keiō 1, Keiō New 1",
             "Toei: Ōedo 27, Ōedo 1",
             "Seibu: Seibu-Shinjuku 1"
+        ],
+        "destinations": [
+            "Placeholder"
         ]
     }
 }
