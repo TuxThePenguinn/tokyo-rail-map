@@ -107,15 +107,27 @@ document.getElementById("close-panel").addEventListener("click", () => {
 
 function showCarouselImage() {
   const image = document.getElementById("carousel-image");
+  const prevButton = document.getElementById("carousel-prev");
+  const nextButton = document.getElementById("carousel-next");
 
   if (currentImages.length === 0) {
     image.style.display = "none";
+    prevButton.classList.add("hidden");
+    nextButton.classList.add("hidden");
     return;
   }
 
   image.src = currentImages[currentImageIndex];
   image.alt = "";
   image.style.display = "block";
+
+  if (currentImages.length > 1) {
+    prevButton.classList.remove("hidden");
+    nextButton.classList.remove("hidden");
+  } else {
+    prevButton.classList.add("hidden");
+    nextButton.classList.add("hidden");
+  }
 }
 
 function setImageCategory(station, categoryName) {
