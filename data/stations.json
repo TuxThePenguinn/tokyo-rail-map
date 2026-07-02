@@ -14,6 +14,7 @@
             "Toei: Ōedo 26"
         ],
         "destinations": [
+            "Yoyogi Station"
         ]
     },
     "sta-shinjuku": {
@@ -36,6 +37,86 @@
         ],
         "destinations": [
             "Shinjuku Station"
+        ]
+    },
+    "sta-tetsudo-hakubutsukan": {
+        "name": "Tetsudō-Hakubutsukan 鉄道博物館",
+        "images": {
+            "Outside": [
+                "images/sta-tetsudo-hakubutsukan/out1.jpg"
+            ],
+            "Inside": [
+            ]
+        },
+        "lines": [
+            "Saitama New Urban Transit: New Shuttle 2"
+        ],
+        "destinations": [
+            "The Railway Museum"
+        ]
+    },
+    "sta-ikebukuro": {
+        "name": "Ikebukuro 池袋",
+        "images": {
+            "Outside": [
+                "images/sta-ikebukuro/out1.png",
+                "images/sta-ikebukuro/out2.jpg"
+            ],
+            "Inside": [
+                "images/sta-ikebukuro/in1.jpg"
+            ]
+        },
+        "lines": [
+            "JR East: Yamanote 13, Saikyo 12, Shonan-Shinjuku 21",
+            "Tobu: Tojo 1",
+            "Seibu: Ikebukuro 1",
+            "Tokyo Metro: Marunouchi 25, Yūrakuchō 9, Fukutoshin 9"
+        ],
+        "destinations": [
+            "Ikebukuro Station"
+        ]
+    },
+    "sta-nippori": {
+        "name": "Nippori 日暮里",
+        "images": {
+            "Outside": [
+                "images/sta-nippori/out1.jpg"
+            ],
+            "Inside": [
+                "images/sta-nippori/in1.jpg"
+            ]
+        },
+        "lines": [
+            "JR East: Joban (Rapid) 2, Keihin–Tōhoku 32, Yamanote 7",
+            "Keisei: Main 2",
+            "Toei: Nippori–Toneri Liner 1"
+            ],
+        "destinations": [
+            "Yanaka Ginza"
+        ]
+    },
+    "sta-ueno": {
+        "name": "Ueno 上野",
+        "images": {
+            "Outside": [
+                "images/sta-ueno/out1.jpg",
+                "images/sta-ueno/out2.jpg",
+                "images/sta-ueno/out3.jpg",
+                "images/sta-ueno/out4.jpg",
+                "images/sta-ueno/out5.jpeg"
+            ],
+            "Inside": [
+                "images/sta-ueno/in1.jpg"
+            ]
+        },
+        "lines": [
+            "Tokyo Metro: Ginza 16, Hibiya 18",
+            "JR East: Shinkansen, Utsunomiya (Tōhoku Main Line) & Takasaki 2, Keihin–Tōhoku 30, Yamanote 5, Jōban 1",
+            "Keisei: Main 1"
+            ],
+        "destinations": [
+            "Ueno Park",
+            "Ueno Station"
         ]
     }
 }
