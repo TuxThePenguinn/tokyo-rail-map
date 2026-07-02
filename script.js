@@ -64,29 +64,33 @@ async function setupMap() {
   await loadStationData();
 
   const mapObject = document.getElementById("rail-map");
+  let initialized = false;
 
-  mapObject.addEventListener("load", () => {
+  function initializeSvgMap() {
+    if (initialized) return;
+
     const svgDoc = mapObject.contentDocument;
+    if (!svgDoc) return;
+
+    initialized = true;
 
     svgPanZoom(mapObject, {
       zoomEnabled: true,
       controlIconsEnabled: true,
       fit: true,
       center: true,
-
       minZoom: 0.5,
       maxZoom: 20,
-
-      zoomScaleSensitivity: 0.18,
-      mouseWheelZoomEnabled: true,
-
-      dblClickZoomEnabled: true
+      mouseWheelZoomEnabled: true
     });
 
     Object.keys(stationData).forEach(stationId => {
       const stationElement = svgDoc.getElementById(stationId);
 
-      if (!stationElement) return;
+      if (!stationElement) {
+        console.log("Missing SVG element:", stationId);
+        return;
+      }
 
       const station = stationData[stationId];
 
@@ -96,14 +100,24 @@ async function setupMap() {
 
       stationElement.style.fill = hasDestinations ? "#2ecc71" : "white";
       stationElement.style.stroke = "#111";
+      stationElement.style.cursor = "pointer";
 
-      stationElement.classList.add("station");
-
-      stationElement.addEventListener("click", () => {
+      function selectStation(event) {
+        event.preventDefault();
+        event.stopPropagation();
         openPanel(station);
-      });
+      }
+
+      stationElement.addEventListener("click", selectStation);
+      stationElement.addEventListener("touchend", selectStation);
+      stationElement.addEventListener("pointerup", selectStation);
     });
-  });
+  }
+
+  mapObject.addEventListener("load", initializeSvgMap);
+
+  setTimeout(initializeSvgMap, 300);
+  setTimeout(initializeSvgMap, 1000);
 }
 
 document.getElementById("close-panel").addEventListener("click", () => {

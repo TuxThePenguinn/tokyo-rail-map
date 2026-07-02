@@ -154,3 +154,8 @@ body {
     font-size: 1.4rem;
   }
 }
+
+.station {
+  cursor: pointer;
+  touch-action: manipulation;
+}
