@@ -73,9 +73,14 @@ async function setupMap() {
       controlIconsEnabled: true,
       fit: true,
       center: true,
+
       minZoom: 0.5,
       maxZoom: 20,
-      mouseWheelZoomEnabled: true
+
+      zoomScaleSensitivity: 0.18,
+      mouseWheelZoomEnabled: true,
+
+      dblClickZoomEnabled: true
     });
 
     Object.keys(stationData).forEach(stationId => {
