@@ -63,3 +63,42 @@ body {
 #map-container {
     touch-action: none;
 }
+#image-categories {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.category-button {
+  border: 1px solid #ccc;
+  background: white;
+  padding: 6px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.category-button.active {
+  background: #111;
+  color: white;
+}
+
+#carousel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+#carousel-image {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+#carousel-prev,
+#carousel-next {
+  font-size: 28px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}

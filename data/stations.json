@@ -1,18 +1,31 @@
 {
     "sta-yoyogi": {
         "name": "Yoyogi 代々木",
-        "image": "images/sta-yoyogi.jpg",
+        "images": {
+            "Outside": [
+                "images/sta-yoyogi/out1.jpg"
+            ],
+            "Inside": [
+                "images/sta-yoyogi/in1.jpg"
+            ]
+        },
         "lines": [
             "JR East: Yamanote 18, Chūō-Sōbu 11",
             "Toei: Ōedo 26"
         ],
         "destinations": [
-            "Placeholder"
         ]
     },
     "sta-shinjuku": {
         "name": "Shinjuku 新宿",
-        "image": "images/sta-shinjuku.jpg",
+        "images": {
+            "Outside": [
+                "images/sta-shinjuku/out1.jpg"
+            ],
+            "Inside": [
+                "images/sta-shinjuku/in1.jpg"
+            ]
+        },
         "lines": [
             "JR East: Yamanote 17, Chūō 5, Chūō-Sōbu 10, Shōnan–Shinjuku 20, Saikyō 11",
             "Odakyu: Odawara 1",
@@ -21,7 +34,7 @@
             "Seibu: Seibu-Shinjuku 1"
         ],
         "destinations": [
-            "Placeholder"
+            "Shinjuku Station"
         ]
     }
 }
