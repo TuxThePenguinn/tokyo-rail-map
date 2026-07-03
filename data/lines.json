@@ -1,0 +1,20 @@
+{
+  "line-yamanote": {
+    "name": "Yamanote Line",
+    "operator": "JR East",
+    "icon": "icons/line-yamanote.png",
+    "color": "#9acd32"
+  },
+  "line-chuo-sobu": {
+    "name": "Chūō-Sōbu Line",
+    "operator": "JR East",
+    "icon": "icons/line-chuo-sobu.png",
+    "color": "#ffd400"
+  },
+  "line-oedo": {
+    "name": "Ōedo Line",
+    "operator": "Toei",
+    "icon": "icons/line-oedo.png",
+    "color": "#b6007a"
+  }
+}
